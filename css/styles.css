@@ -126,12 +126,11 @@ header nav {
   width: 95%;
 }
 
-/* main {
-  width: 100%;
-  background-image: url("../assets/bg.png");
-  background-repeat: no-repeat;
-
-} */
+marquee {
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
+}
 
 /* curriculum section */
 .curriculum-container {
@@ -312,12 +311,12 @@ header nav {
   font-weight: 500;
   font-size: 0.5rem;
 }
-.card-2-date
- {
+.card-2-date {
   background-color: #95b226;
 }
-.card-3-date,.card-4-date,
-.card-5-date{
+.card-3-date,
+.card-4-date,
+.card-5-date {
   background-color: #5d58f0;
 }
 
@@ -535,7 +534,7 @@ header nav {
       );
     background-size: contain;
     background-position-x: 60%;
-    background-position-y:25%;
+    background-position-y: 25%;
   }
   .stories-title {
     margin-top: 60px;
@@ -544,7 +543,7 @@ header nav {
   }
   .stories-card-container {
     margin-top: 80px;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
     max-width: 1160px;
     grid-template-columns: repeat(4, 1fr);
