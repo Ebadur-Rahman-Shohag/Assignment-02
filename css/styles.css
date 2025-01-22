@@ -201,9 +201,10 @@ marquee {
 }
 
 .curriculum-card-description {
-  /* max-width: 194px; */
+  max-width: 194px;
   font-family: "Raleway", serif;
   font-size: 0.625rem;
+  line-height: 19.16px;
   margin-top: 22px;
 }
 .read-more-conteiner {
