@@ -78,6 +78,7 @@ header nav {
 
 /* banner css */
 .banner-container {
+  /* width: 100%; */
   max-width: 1158.61px;
   margin: 0 auto;
   display: flex;
@@ -135,6 +136,8 @@ header nav {
 /* curriculum section */
 .curriculum-container {
   width: 100%;
+
+  margin-bottom: 20px;
   background-image: url("../assets/bg.png");
   background-repeat: no-repeat;
   background-size: inherit;
@@ -236,9 +239,10 @@ header nav {
 /* our stories section */
 .stories-container {
   background: url("../assets/bg.png"),
-    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-  background-size: inherit;
+    linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(254, 163, 1, 0.3) 100%);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 10%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -308,6 +312,14 @@ header nav {
   font-weight: 500;
   font-size: 0.5rem;
 }
+.card-2-date
+ {
+  background-color: #95b226;
+}
+.card-3-date,.card-4-date,
+.card-5-date{
+  background-color: #5d58f0;
+}
 
 .view-all-btn {
   border-radius: 12px;
@@ -322,6 +334,84 @@ header nav {
   height: 30px;
   border: none;
 }
+
+/* footer-css */
+.footer-conteiner {
+  width: 100%;
+  background: rgb(1, 172, 253);
+}
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 92%;
+  margin-left: 16px;
+}
+.footer-left {
+  margin-top: 65px;
+}
+.footer-left-logo-title-container {
+  display: flex;
+  align-items: center;
+}
+.footer-left-logo {
+  width: 69.23px;
+  height: 69.23px;
+  margin-right: 9px;
+}
+.footer-left-title {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.footer-left-description {
+  max-width: 357px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 24px;
+}
+
+.footer-middle-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.footer-middle-links-container {
+  margin-top: 27.5px;
+}
+.footer-middle-link-item {
+  list-style: none;
+  margin-bottom: 17px;
+}
+.footer-middle-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.06rem;
+  text-decoration: none;
+}
+
+.footer-right {
+  margin-bottom: 60px;
+}
+
+.footer-right-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.37rem;
+}
+.footer-right-icons-container {
+  margin-top: 37px;
+}
+.footer-right-icon {
+  width: 33.91px;
+  height: 33.91px;
+  border-radius: 3.39px;
+  margin-right: 8.5px;
+  border: none;
+}
+
 /* ------------------------------------------------------------------------------ */
 /* responsive css code */
 @media screen and (min-width: 576px) {
@@ -422,6 +512,7 @@ header nav {
     font-family: "Raleway", serif;
     font-size: 1rem;
     margin-top: 33px;
+    text-align: left;
   }
   .read-more-conteiner {
     margin-top: 38.5px;
@@ -436,8 +527,15 @@ header nav {
 
   /* our stories section */
   .stories-container {
-    background-size: cover;
-    /* background-position: ; */
+    background: url("../assets/bg.png"),
+      linear-gradient(
+        0deg,
+        rgba(254, 163, 1, 0.3),
+        rgba(255, 255, 255, 0.3) 100%
+      );
+    background-size: contain;
+    background-position-x: 60%;
+    background-position-y:25%;
   }
   .stories-title {
     margin-top: 60px;
@@ -541,5 +639,61 @@ header nav {
     font-weight: 700;
     line-height: 30px;
     margin: 90px 0 70px 0;
+  }
+
+  /* footer-css */
+  .footer-conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: 228px;
+  }
+  .footer-content-container {
+    max-width: 1070.91px;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    margin-top: 123px;
+    margin-left: 140px;
+    margin-bottom: 174px;
+    margin-right: 228px;
+  }
+  .footer-left {
+    margin-top: 0;
+  }
+  .footer-left-logo {
+    width: 82.9px;
+    height: 81.65px;
+    margin-right: 11px;
+  }
+  .footer-left-title {
+    font-size: 2.62rem;
+  }
+  .footer-left-description {
+    max-width: 399px;
+    font-size: 1.25rem;
+    margin-top: 35.5px;
+  }
+
+  .footer-middle-title {
+    max-width: 156px;
+    font-size: 1.5rem;
+  }
+  .footer-middle-links-container {
+    margin-top: 32px;
+  }
+  .footer-middle-link {
+    font-size: 1.25rem;
+  }
+  .footer-right-title {
+    font-size: 1.6rem;
+  }
+  .footer-right-icons-container {
+    margin-top: 42px;
+  }
+  .footer-right-icon {
+    width: 40.61px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 20px;
   }
 }
