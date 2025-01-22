@@ -511,6 +511,7 @@ marquee {
     max-width: 285px;
     font-family: "Raleway", serif;
     font-size: 1rem;
+    line-height: 28.3px;
     margin-top: 33px;
     text-align: left;
   }
